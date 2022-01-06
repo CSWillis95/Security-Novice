@@ -32,7 +32,7 @@ start = datetime.now()
 
 open_ports = []
 
-for port in range(1, 81):
+for port in range(1, 81): # to change range of port scan
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
             sock.settimeout(0.5)
